@@ -2,25 +2,26 @@
 
 
 @mixin mq-mobile($w) {
-    @media (max-width: $w){
+    @media (min-width: $w){
         @content;
     }
 }
 
 @mixin mq-tablet($w) {
-    @media (max-width: $w){
+    @media (min-width: $w){
         @content;
     }
 }
 
 @mixin mq-desktop($w) {
-    @media (max-width: $w){
+    @media (min-width: $w){
         @content;
     }
 }
 
 @mixin display-flex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: $center;
     align-content: $center;
     align-items: $center;
