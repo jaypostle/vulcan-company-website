@@ -1,6 +1,4 @@
 // Write your JavaScript here...
-
-// Write your JavaScript here...
 //set const for images
 const img1 = document.querySelector("#carouselImg1");
 const img2 = document.querySelector("#carouselImg2");
