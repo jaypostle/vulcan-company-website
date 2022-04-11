@@ -23,10 +23,12 @@ h6 {
 	line-height: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
+	margin: 0;
 }
 
 h2{
     color: $dark-header-blue;
+	font-size: 1.75rem;
 }
 
 
@@ -35,7 +37,7 @@ h3{
 }
 
 p {
-
+	margin: 0.5rem;
 }
 
 
@@ -95,8 +97,27 @@ option {
 // extend full width product cta
 // extend buttons with no background (transparent)
 
+@mixin button-primary() {
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #fff;
+	background-color: $branded-blue;
+	border: none;
+	border-radius: 0.0625rem;
+	margin: 1rem 0;
+	padding: 0.5rem 1rem;
+}
+
 a {
-    text-transform: uppercase;
+    @include button-primary;
+}
+
+a.secondary {
+	@include button-primary;
+	background-color: rgba($branded-blue, 0);
+	border: 1px solid #fff;
 }
 
 a:visited {
