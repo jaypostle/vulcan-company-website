@@ -1,14 +1,29 @@
 @use "variables-mike" as *;
 @use "mixins-mike" as *;
+@use "variables" as *;
 
     .hidden-mobile {
         display: none;
     }
 
+    .waste-collection h3{
+        max-width: 16px;
+    }
+
 @media (max-width: 600px) {
     .waste-collection {
         @include display-flex;
+        position: relative;
     }    
+    .waste-collection::after {
+        content: "";
+        position: absolute;
+        background-color: $text-gray;
+        width: 90%;
+        height: 1px;
+        top: 0;
+        left: 25px;
+    }
 }
 
 @include mq-tablet($mid){
@@ -22,6 +37,10 @@
         @include display-flex;
         text-align: center;
         margin: auto;
+    }
+    .waste-collection h3{
+        margin-left: 4.5rem;
+        text-align: center;
     }
 }
 
@@ -39,6 +58,10 @@
         padding: 1rem;
         text-align: center;
         margin: auto;
+    }
+    .waste-collection h3 {
+        margin-left: 4.5rem;
+        text-align: center;
     }
 
 }
