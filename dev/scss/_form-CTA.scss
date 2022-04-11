@@ -19,6 +19,10 @@
     @include display-flex-center();
     padding: 0.5rem;
 
+    h4 {
+        color: $branded-blue;
+    }
+
 
     form {
         @include display-flex-center($flex-direction: column, $align-items: left);
@@ -57,7 +61,7 @@
     }
 
     @include mq-tablet($mid){
-
+        text-align: center;
         padding: 1rem;
         
         form {
