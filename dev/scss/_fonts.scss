@@ -1,8 +1,116 @@
 @use "variables" as *;
 
 
-p {
+/* Typography
+--------------------------------------------- */
+
+
+body {
+    font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: $text-gray;
+	background-color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2{
+    color: $dark-header-blue;
+}
+
+
+h3{
     color: $branded-blue;
-    font-size: 1rem;
-    line-height: 1.5;
+}
+
+p {
+
+}
+
+
+/* Elements
+--------------------------------------------- */
+ul {
+	
+}
+
+ol {
+	
+}
+
+dl {
+	
+}
+
+figure {
+	
+}
+
+table {
+	border-collapse: collapse;
+  	// width: 90%;
+	margin: 0 auto;
+}
+
+
+// form field mixins
+// inactive and extend active
+
+form {
+    
+}
+
+label {
+
+}
+
+select {
+
+}
+
+option {
+
+}
+
+
+// carousel circles
+// extend blue active
+
+
+/* Links
+--------------------------------------------- */
+
+// ctas
+// extend full width product cta
+// extend buttons with no background (transparent)
+
+a {
+    text-transform: uppercase;
+}
+
+a:visited {
+	
+}
+
+a:hover {
+
+}
+
+a:focus {
+
+}
+
+a:active {
+
 }

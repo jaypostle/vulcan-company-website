@@ -13,6 +13,8 @@ $form-gray: hsl(0, 0%, 73%); // an inactive form field
 $form-gray-active: hsl(180, 3%, 93%); // an active form field
 $form-text-gray: hsl(205, 5%, 49%); // form field text
 
-$dark-gray-elements: hsl(195, 4%, 20%);
-$dark-gray-elements-transparent: hsla(195, 4%, 20%, 0.8); // header menu 
+$dark-gray-elements: #313435;
+$dark-gray-elements-transparent: rgba($dark-gray-elements, 0.8); // header menu 
+
 $horizontal-rule-gray: hsl(0, 0%, 81%); // horizontal rules
+
