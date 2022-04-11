@@ -7,13 +7,23 @@
 
     <!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
     <!-- Put Google Fonts Here -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <!--  jayson added this -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- end jayson  -->
+
     <!-- end Google Fonts -->
+
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/dd6e7e6cde.js" crossorigin="anonymous"></script>
 
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
     <link rel="stylesheet" href="styles/styles.css?cachebuster=1" />
@@ -26,7 +36,7 @@
         <!-- following links appear in top left on desktop &tablet -->
         <p><a href="#">Install Map</a> <a href="#">Product Literature</a></p>
         <!-- following links appear in top right on desktop & tablet -->
-        <p><a href="">+1 712-642-2755</a> <a href="">Contact Us</a></p>
+        <p><i class="fa-solid fa-phone"></i><a href="">+1 712-642-2755</a> <i class="fa-solid fa-envelope"></i><a href="">Contact Us</a></p>
         <img src="./images/logo-white-vulcan.svg" alt="Vulcan logo" />
         <nav>
           <ul>
@@ -71,15 +81,15 @@
         <section>
         <img src="" alt="" /><!-- Image slideshow follows -->
         <h1>
-          WE DESIGN AND FABRICATE INDESTRUCTIBLE WASTEWATER SCREENS. ENOUGH
-          SAID.
+          We design and fabricate indestructible wastewater screens. Enough said.
         </h1>
-        <div><a href="">VIEW PRODUCTS</a><a href="">VIEW SERVICES</a></div>
+        <div><a href="">View products</a><a href="">View services</a></div>
         <!-- 3 circles here that display which slideshow image is displayed -->
         <img src="./images/wave-white.png" alt="stylistic white wave overlay" />
       </section>
       </header>
       <main>
+
         <section>
         <h2>CUSTOMIZED PER ORDER</h2>
         <p>
@@ -87,10 +97,13 @@
           grit handling or sludge thickening products are either. We’ll help
           determine exactly what you need.
         </p>
-      </section>
-        <section class="waste-articles">
 
+      </section>
+
+
+        <section class="waste-articles">
           <article class="waste-collection">
+
           <img 
             src="./images/machine-01-300x274.png" 
             alt="screening machine" 
@@ -99,10 +112,13 @@
             sizes="(min-width: 320px) 300px,
                   (min-width: 1500px) 600px,
                   300px"
-          />
-          <h3>Screening</h3>
-          <a href="#" class="hidden-mobile"><p class="hidden-mobile">View Selection</p></a>
-        </article>
+            />
+            <h3>Screening</h3>
+            <a href="#" class="hidden-mobile"
+              ><p class="hidden-mobile">View Selection</p></a
+            >
+          </article>
+
 
         <article class="waste-collection">
           <img
@@ -127,10 +143,8 @@
             sizes="(min-width: 320px) 300px,
                   (min-width: 1500px) 600px,
                   300px"
-          />
-          <h3>Grit Handling</h3>
-          <a href="#" class="hidden-mobile"><p class="hidden-mobile">View Selection</p></a>
-        </article>
+            />
+            <h3>Grit Handling</h3>
 
         <article class="waste-collection">
           <img
@@ -145,6 +159,7 @@
           <h3>Sludge Thickening</h3>
           <a href="#" class="hidden-mobile"><p class="hidden-mobile">View Selection</p></a>
         </article>
+
 
         </section>
         <section>
@@ -207,13 +222,15 @@
             allowfullscreen
           ></iframe>
         </section>
-        <section>
+        <section class="newsletter">
           <form action="get">
             <label for="email"
               >Stay in the know. Sign up for our newsletter.</label
             >
-            <input type="email" placeholder="Enter your Email" />
-            <input type="submit" value="SUBMIT" />
+            <div class="email-input">
+              <input type="email" placeholder="Enter your email" />
+              <input type="submit" value="SUBMIT" />
+            </div>
           </form>
         </section>
         <section>
@@ -234,19 +251,15 @@
           alt="light blue stylistic wave"
         />
         <img src="./images/logo-white-vulcan.svg" alt="" />
-        <a href="#"
-          ><img src="./images/icon-white-facebook.png" alt="Facebook Icon"
-        /></a>
-        <a href="#"
-          ><img src="./images/icon-white-linkedin.png" alt="Facebook Icon"
-        /></a>
         <p>
-          <a href=""
-            ><img src="./images/phone-icon.png" alt="" />+1 712-642-2755</a
-          >
-          |
-          <a href=""><img src="./images/mail-icon.png" alt="" /> CONTACT US</a>
-        </p>
+        <a href="#"
+          ><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"
+          ><i class="fa-brands fa-linkedin-in"></i></a>
+         
+            <i class="fa-solid fa-phone"></i><a href="">+1 712-642-2755</a> 
+            <i class="fa-solid fa-envelope"></i><a href="">Contact Us</a>
+          </p>
         <p>COPYRIGHT 2017. ALL RIGHTS RESEREVED</p>
       </footer>
     </div>
