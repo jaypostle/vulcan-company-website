@@ -1,9 +1,7 @@
-// @use "variables" as *;
-@use "mixins-mike" as *;
+@use "variables" as *;
 .newsletter {
-  //this will need to be changed to the branded color variable
-  background-color: $light-blue-background lightblue;
-  color: $dark-header-blue blue;
+  background-color: $light-blue-background;
+  color: $dark-header-blue;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -36,7 +34,7 @@
       padding: 0.5rem 1rem;
       grid-column: 2/3;
       //color to be updated
-      background-color: $branded-blue darkblue;
+      background-color: $branded-blue;
       color: white;
       font-weight: bold;
     }
