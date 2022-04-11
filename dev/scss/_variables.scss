@@ -1,0 +1,20 @@
+// Fonts and Main Blue
+$branded-blue: hsl(204, 64%, 55%); // for most CTAs, h3, light blue background
+$dark-header-blue: hsl(204, 47%, 27%); // for h2s
+$text-gray: hsl(230, 14%, 36%); // for p text
+$map-text-gray: hsl(0, 1%, 31%); // specific blue gray for the h3 in teh map section
+
+// Background Secondary Colors
+$light-blue-background: hsl(203, 60%, 84%); // lightest blue background for "newsletter"
+$medium-blue-background: hsl(204, 47%, 27%); // background blue for "product advisor" and "ready to spec" sections
+
+// Specific Element Colors
+$form-gray: hsl(0, 0%, 73%); // an inactive form field
+$form-gray-active: hsl(180, 3%, 93%); // an active form field
+$form-text-gray: hsl(205, 5%, 49%); // form field text
+
+$dark-gray-elements: hsl(195, 4%, 20%);
+$dark-gray-elements-transparent: hsla(195, 4%, 20%, 0.8); // header menu 
+$horizontal-rule-gray: hsl(0, 0%, 81%); // horizontal rules
+
+
