@@ -1,0 +1,27 @@
+@use "variables-mike" as *;
+@use "mixins-mike" as *;
+
+    .hidden-mobile {
+        display: none;
+    }
+
+@include mq-tablet($mid){
+    .hidden-mobile {
+        display: block;
+    }
+    .waste-articles{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@include mq-desktop($desktop) {
+    .hidden-mobile {
+        display: block;
+    }
+    .waste-articles{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}

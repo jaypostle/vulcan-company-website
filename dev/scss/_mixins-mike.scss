@@ -1,0 +1,29 @@
+@use "variables-mike";
+
+
+@mixin mq-mobile($w) {
+    @media (min-width: $w){
+        @content;
+    }
+}
+
+@mixin mq-tablet($w) {
+    @media (min-width: $w){
+        @content;
+    }
+}
+
+@mixin mq-desktop($w) {
+    @media (min-width: $w){
+        @content;
+    }
+}
+
+@mixin display-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $center;
+    align-content: $center;
+    align-items: $center;
+    padding: 1rem;
+}
