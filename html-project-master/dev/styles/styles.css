@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+}
+
+.carousel {
+  width: 100vw;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 500ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.active-photo {
+  opacity: 1;
+}
+
+.carousel-nav {
+  display: flex;
+  position: absolute;
+  top: 80%;
+  width: 8%;
+  justify-content: space-around;
+}
+
+.circle {
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  background-color: white;
+}
+
+#carouselNav1 {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=styles.css.map */
