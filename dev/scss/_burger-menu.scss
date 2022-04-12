@@ -1,8 +1,9 @@
 @use "variables" as *;
+@use "variables-mike" as *;
+@use "mixins-mike" as *;
 
-#logo {
-    width: 10%;
-}
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -11,7 +12,8 @@ nav {
         list-style: none;
         li a {
             display: inline-block;
-            padding: 15px;
+            // removing this temporarily:
+            // padding: 15px;
             text-decoration: none;
         }
         .closeMenu {
@@ -25,10 +27,11 @@ nav {
         margin: 20px;
         display: none;
         cursor: pointer;
+        color: #fff;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: $tablet-landscape) {
     nav{
         .mainMenu {
             height: 100vh;
@@ -61,4 +64,16 @@ nav {
         display: inline-block;
         padding: 12px;
     }
+}
+
+// Finish the burger menu styles here
+@media (max-width: $tablet-landscape) {
+.mainMenu {
+    background-color: $dark-gray-elements-transparent;
+    margin-top: 0;
+
+    // a {
+    //     background-color: rgba($branded-blue, 0);
+    // }
+}
 }

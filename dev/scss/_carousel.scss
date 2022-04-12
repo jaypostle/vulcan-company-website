@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 body {
   margin: 0;
 }
@@ -28,21 +30,22 @@ body {
 .active-photo {
   opacity: 1;
 }
-.carousel-nav {
-  display: flex;
-  position: absolute;
-  top: 80%;
-  width: 8%;
-  justify-content: space-around;
-}
+// .carousel-nav {
+//   display: flex;
+//   position: absolute;
+//   top: 80%;
+//   width: 8%;
+//   justify-content: space-around;
+// }
 .circle {
   border-radius: 50%;
-  height: 1rem;
-  width: 1rem;
+  height: 0.75rem;
+  width: 0.75rem;
   background-color: white;
+  margin: 0 0.5rem;
 }
 #carouselNav1 {
-  background-color: blue;
+  background-color: $branded-blue;
 }
 #place-holder {
   display: block;
