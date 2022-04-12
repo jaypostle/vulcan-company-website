@@ -2,15 +2,49 @@
 @use "mixins-mike" as *;
 @use "variables" as *;
 
-    .hidden-mobile {
-        display: none;
-    }
+.hidden-mobile {
+  display: none;
+}
 
     .waste-collection h3{
         max-width: 16px;
     }
 
 @media (max-width: 600px) {
+  .waste-collection {
+    @include display-flex;
+  }
+}
+
+@include mq-tablet($mid) {
+  .hidden-mobile {
+    display: block;
+  }
+  .waste-collection {
+    max-width: 15.625rem;
+  }
+  .waste-articles {
+    @include display-flex;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@include mq-desktop($desktop) {
+  .hidden-mobile {
+    display: block;
+  }
+  .waste-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: $center;
+    align-items: $center;
+    padding: 1rem;
+    text-align: center;
+    margin: auto;
+  }
+
     .waste-collection {
         @include display-flex;
         position: relative;
@@ -67,7 +101,7 @@
 }
 
 #carousel {
-    position: absolute;
-    max-width: 100%;
-    height: auto;
+  // position: absolute;
+  max-width: 100%;
+  height: auto;
 }

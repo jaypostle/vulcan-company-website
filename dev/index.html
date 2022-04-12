@@ -28,7 +28,6 @@
 
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
     <link rel="stylesheet" href="styles/styles.css?cachebuster=1" />
-    <link rel="stylesheet" href="./styles/normalize.css" />
   </head>
   <body>
     <!-- Put your HTML code here... -->
@@ -53,35 +52,35 @@
             <div class="closeMenu"><i class="fa fa-times"></i></div>
           </ul>
         </nav>
-        <!-- <section id="carousel">
+        <section id="carousel">
           <div class="carousel">
-            <ul>
-              <li class="slide active-photo" id="carouselImg1">
+    
+              <div class="slide active-photo" id="carouselImg1">
                 <img
                   src="./images/header-slider-img-01.jpg"
                   alt="large machinery"
                 />
-              </li>
-              <li class="slide" id="carouselImg2">
+              </div>
+              <div class="slide" id="carouselImg2">
                 <img
                   src="./images/header-slider-img-02.jpg"
                   alt="welding worker"
                 />
-              </li>
-              <li class="slide" id="carouselImg3">
+              </div>
+              <div class="slide" id="carouselImg3">
                 <img
                   src="./images/header-slider-img-03.jpg"
                   alt="2 industrial workers"
                 />
-              </li>
-            </ul>
+              </div>
+              <div id="place-holder"><img src="./images/header-slider-img-01.jpg" alt="blank image"></div>
             <div class="carousel-nav">
               <div class="circle" id="carouselNav1"></div>
               <div class="circle" id="carouselNav2"></div>
               <div class="circle" id="carouselNav3"></div>
             </div>
           </div>
-        </section> -->
+        </section>
 
         <section>
         <img src="" alt="" /><!-- Image slideshow follows -->
@@ -217,12 +216,13 @@
                 <option value="ipsum">Ipsum</option>
               </select>
             </div>
-            <br>
             <input type="submit" value="FIND MY PRODUCT" />
             
           </form>
           <a>sample button</a>
           <a class="secondary">sample secondary button</a>
+          <a class="transparent-buttons">sample secondary button</a>
+
         </section>
         <section>
           <h2>DELIVERING CLEAN, SAFE WATER SINCE 1975. REFRESHING INDEED.</h2>
@@ -233,15 +233,13 @@
           </p>
           <a href="#"><p>ABOUT US</p></a>
         </section>
-        <section>
+        <section class="video">
+          <div id="video-wrapper">
           <iframe
             src="https://player.vimeo.com/video/183929811?h=46d7273d42&title=0&byline=0&portrait=0"
-            width="640"
-            height="360"
             frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen
           ></iframe>
+          </div>
         </section>
         <section class="newsletter">
           <form action="get">

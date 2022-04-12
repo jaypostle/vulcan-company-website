@@ -1,0 +1,24 @@
+@use "variables" as *;
+.video {
+  background-color: $branded-blue;
+}
+
+#video-wrapper {
+  background-color: $branded-blue;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  display: block;
+  border: 1rem solid $dark-header-blue;
+  background-color: #367d22;
+  height: 13.75rem;
+  width: 25.625rem;
+  //   width: 50%;
+  @media only screen and (min-width: 48rem) {
+    width: 39.25rem;
+    height: 22.75rem;
+  }
+}

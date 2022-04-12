@@ -1,8 +1,8 @@
 // Fonts and Main Blue
 $branded-blue: hsl(204, 64%, 55%); // for most CTAs, h3, light blue background
 $dark-header-blue: hsl(204, 47%, 27%); // for h2s
-$text-gray: hsl(230, 14%, 36%); // for p text
-$map-text-gray: hsl(0, 1%, 31%); // specific blue gray for the h3 in teh map section
+$text-gray: #282829; // for p text
+$map-text-gray: hsl(0, 1%, 31%); // specific blue gray for the h3 in teh map section and tertiary links
 
 // Background Secondary Colors
 $light-blue-background: hsl(203, 60%, 84%); // lightest blue background for "newsletter"
