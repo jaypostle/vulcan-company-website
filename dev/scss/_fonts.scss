@@ -37,6 +37,10 @@ h3{
     color: $branded-blue;
 }
 
+h4 {
+	text-transform: none;
+}
+
 p {
 	margin: 0.5rem;
 }
@@ -119,6 +123,13 @@ a.secondary {
 	@include button-primary;
 	background-color: rgba($branded-blue, 0);
 	border: 1px solid #fff;
+}
+
+a.transparent-buttons {
+	background-color: rgba($branded-blue, 0);
+	text-transform: none;
+	text-decoration: underline;
+	color: $map-text-gray;
 }
 
 a:visited {
