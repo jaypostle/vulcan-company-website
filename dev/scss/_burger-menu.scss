@@ -1,5 +1,7 @@
 @use "variables" as *;
 @use "variables-mike" as *;
+@use "mixins-mike" as *;
+
 
 
 nav {
@@ -25,6 +27,7 @@ nav {
         margin: 20px;
         display: none;
         cursor: pointer;
+        color: #fff;
     }
 }
 
@@ -61,4 +64,16 @@ nav {
         display: inline-block;
         padding: 12px;
     }
+}
+
+// Finish the burger menu styles here
+@media (max-width: $tablet-landscape) {
+.mainMenu {
+    background-color: $dark-gray-elements-transparent;
+    margin-top: 0;
+
+    // a {
+    //     background-color: rgba($branded-blue, 0);
+    // }
+}
 }

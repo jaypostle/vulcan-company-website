@@ -26,17 +26,17 @@ let changePhoto = function () {
   activePhoto.classList.add("active-photo");
   //change nav button fill
   if (activePhoto == img1) {
-    button1.style.backgroundColor = "blue";
+    button1.style.backgroundColor = "#009DDC";
     button2.style.backgroundColor = "white";
     button3.style.backgroundColor = "white";
   } else if (activePhoto == img2) {
     button1.style.backgroundColor = "white";
-    button2.style.backgroundColor = "blue";
+    button2.style.backgroundColor = "#009DDC";
     button3.style.backgroundColor = "white";
   } else {
     button1.style.backgroundColor = "white";
     button2.style.backgroundColor = "white";
-    button3.style.backgroundColor = "blue";
+    button3.style.backgroundColor = "#009DDC";
   }
 };
 
