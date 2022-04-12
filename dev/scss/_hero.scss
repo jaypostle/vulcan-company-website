@@ -1,0 +1,72 @@
+@use "variables" as *;
+@use "fonts" as *;
+@use "variables-mike" as *;
+@use "mixins-mike" as *;
+@use "form-CTA" as *;
+
+header {
+    background-color: $dark-header-blue;
+}
+
+.secondary-navigation-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    a {
+        font-size: 0.75rem;
+        background-color: rgba($branded-blue, 0);
+        text-decoration: none;
+        margin: 0;
+    }
+
+    div {
+        @include display-flex-center($align-content: left, $align-items: left);
+    }
+
+    p {
+        @include display-flex-center();
+        margin: 0;
+    }
+
+    .desktop-left {
+        grid-column: 1 / span 1;
+
+    }
+
+    .logo-container {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+
+        img {
+            max-width: 50%;
+            height: 4rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .desktop-right {
+        grid-column: 3 / span 1;
+
+        i {
+            background-color: #fff;
+            border-radius: 50%;
+            padding: 0.25rem;
+            font-size: 0.625rem;
+        }
+
+        a {
+            padding-left: 0.5rem;
+        }
+
+    }
+}
+
+.main-navigation-container {
+    
+    ul {
+        display: inline-flex;
+        padding-inline-start: 0;
+        list-style-type: none;
+
+    }
+}

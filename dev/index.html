@@ -32,21 +32,33 @@
     <!-- Put your HTML code here... -->
     <div id="site-wrapper">
       <header>
-        <!-- following links appear in top left on desktop &tablet -->
-        <p><a href="#">Install Map</a> <a href="#">Product Literature</a></p>
-        <!-- following links appear in top right on desktop & tablet -->
-        <p><i class="fa-solid fa-phone"></i><a href="">+1 712-642-2755</a> <i class="fa-solid fa-envelope"></i><a href="">Contact Us</a></p>
-        <img src="./images/logo-white-vulcan.svg" alt="Vulcan logo" />
-        <nav>
-          <ul>
-            <a href=""><li>About</li></a>
-            <a href=""><li>Products</li></a>
-            <a href=""><li>Services</li></a>
-            <a href=""><li>Parts</li></a>
-            <a href=""><li>News</li></a>
-            <a href=""><li>Contact</li></a>
+        <nav class="secondary-navigation-container">
+          <!-- following links appear in top left on desktop &tablet -->
+          <div class="desktop-left">
+            <p><a href="#">Install Map</a> <a href="#">Product Literature</a></p>
+          </div>
+          <!-- following links appear in top right on desktop & tablet -->
+          <div class="desktop-right">
+            <p><i class="fa-solid fa-phone"></i><a href="">+1 712-642-2755</a> <i class="fa-solid fa-envelope"></i><a href="">Contact Us</a></p>
+          </div>
+          <div class=logo-container>
+          <img id="logo" src="./images/logo-white-vulcan.svg" alt="Vulcan logo" />
+          </div>
+        </nav>
+
+        <nav class="main-navigation-container">
+          <div class="openMenu"><i class="fa fa-bars"></i></div>
+          <ul class="mainMenu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Parts</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
           </ul>
         </nav>
+        
         <section id="carousel">
           <div class="carousel">
     
@@ -78,14 +90,16 @@
         </section>
 
         <section>
-        <img src="" alt="" /><!-- Image slideshow follows -->
-        <h1>
-          We design and fabricate indestructible wastewater screens. Enough said.
-        </h1>
-        <div><a href="">View products</a><a href="">View services</a></div>
-        <!-- 3 circles here that display which slideshow image is displayed -->
-        <img src="./images/wave-white.png" alt="stylistic white wave overlay" />
-      </section>
+          <img src="" alt="" /><!-- Image slideshow follows -->
+          <div>
+            <h1>
+              We design and fabricate indestructible wastewater screens. Enough said.
+            </h1>
+            <div><a href="">View products</a><a href="">View services</a></div>
+          </div>
+          <!-- 3 circles here that display which slideshow image is displayed -->
+          <img src="./images/wave-white.png" alt="stylistic white wave overlay" />
+        </section>
       </header>
       <main>
 
