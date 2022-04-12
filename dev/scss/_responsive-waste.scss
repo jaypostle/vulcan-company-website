@@ -6,61 +6,71 @@
   display: none;
 }
 
+
+
+@media (max-width: 600px) {
+
+  .waste-collection {
+    @include display-flex;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+    scale: .5;
+    h3{
+        scale: 1.5;
+        padding: 1rem;
+        color: $dark-gray-elements;
+        
+    }
+ }    
+.waste-collection:nth-child(1n+2)::after {
+    content: "";
+    position: absolute;
+    background-color: $text-gray;
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: 25px;
+}
+}
+
+
+// @include mq-tablet($mid) {
+//   .hidden-mobile {
+//     display: block;
+//   }
+//   .waste-collection {
+//     max-width: 15.625rem;
+//   }
+//   .waste-articles {
+//     @include display-flex;
+//     text-align: center;
+//     margin: auto;
+//   }
+// }
+
+// @include mq-desktop($desktop) {
+//   .hidden-mobile {
+//     display: block;
+//   }
+//   .waste-articles {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//     align-content: $center;
+//     align-items: $center;
+//     padding: 1rem;
+//     text-align: center;
+//     margin: auto;
+//   }
+// }
+
+
+@include mq-tablet($mid){
     .waste-collection h3{
         max-width: 16px;
     }
 
-@media (max-width: 600px) {
-  .waste-collection {
-    @include display-flex;
-  }
-}
-
-@include mq-tablet($mid) {
-  .hidden-mobile {
-    display: block;
-  }
-  .waste-collection {
-    max-width: 15.625rem;
-  }
-  .waste-articles {
-    @include display-flex;
-    text-align: center;
-    margin: auto;
-  }
-}
-
-@include mq-desktop($desktop) {
-  .hidden-mobile {
-    display: block;
-  }
-  .waste-articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: $center;
-    align-items: $center;
-    padding: 1rem;
-    text-align: center;
-    margin: auto;
-  }
-
-    .waste-collection {
-        @include display-flex;
-        position: relative;
-    }    
-    .waste-collection::after {
-        content: "";
-        position: absolute;
-        background-color: $text-gray;
-        width: 90%;
-        height: 1px;
-        top: 0;
-        left: 25px;
-    }
-}
-
-@include mq-tablet($mid){
     .hidden-mobile {
         display: block;
     }
@@ -68,17 +78,21 @@
         max-width: 15.625rem;
     }
     .waste-articles{
-        @include display-flex;
-        text-align: center;
-        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: .25rem;
     }
     .waste-collection h3{
-        margin-left: 4.5rem;
+        margin-left: .5rem;
         text-align: center;
     }
 }
 
 @include mq-desktop($desktop) {
+    .waste-collection h3{
+        max-width: 16px;
+    }
+
     .hidden-mobile {
         display: block;
 
