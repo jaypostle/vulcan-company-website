@@ -57,4 +57,5 @@ button3.addEventListener("click", function () {
   activePhoto = img2;
   changePhoto();
 });
+
 //# sourceMappingURL=script.min.js.map
