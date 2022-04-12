@@ -27,7 +27,6 @@
 
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
     <link rel="stylesheet" href="styles/styles.css?cachebuster=1" />
-    <link rel="stylesheet" href="./styles/normalize.css" />
   </head>
   <body>
     <!-- Put your HTML code here... -->
@@ -114,9 +113,7 @@
                   300px"
             />
             <h3>Screening</h3>
-            <a href="#" class="hidden-mobile"
-              ><p class="hidden-mobile">View Selection</p></a
-            >
+            <a href="#" class="hidden-mobile"><p class="hidden-mobile">View Selection</p></a>
           </article>
 
 
@@ -134,7 +131,7 @@
           <a href="#" class="hidden-mobile"><p class="hidden-mobile">View Selection</p></a>
         </article>
 
-        <article class="waste-collection">
+      <article class="waste-collection">
           <img
             src="./images/machine-03-300x274.png"
             alt="grit handling machine"
@@ -145,6 +142,8 @@
                   300px"
             />
             <h3>Grit Handling</h3>
+            <a href="#" class="hidden-mobile"><p class="hidden-mobile">View Selection</p></a>
+        </article>
 
         <article class="waste-collection">
           <img
@@ -162,46 +161,63 @@
 
 
         </section>
-        <section>
+        <section id="form-find-product">
           <img
             src="./images/wave-blue-dark.png"
             alt="dark blue stylistic wave"
           />
-          <h2>PRODUCT ADVISOR</h2>
-          <p>Find your project’s perfect fit.</p>
-          <form action="get">
-            <label for="#product-type">Product Type</label>
-            <select name="" id="product-type">
-              <option value="select">Select</option>
-              <option value="lorem">Lorem</option>
-              <option value="ipsum">Ipsum</option>
-            </select>
-            <label for="#screen-location">Screen Location</label>
-            <select name="" id="screen-location">
-              <option value="select">Select</option>
-              <option value="lorem">Lorem</option>
-              <option value="ipsum">Ipsum</option>
-            </select>
-            <label for="#flow-type">Flow Type</label>
-            <select name="" id="flow-type">
-              <option value="select">Select</option>
-              <option value="lorem">Lorem</option>
-              <option value="ipsum">Ipsum</option>
-            </select>
-            <label for="#channel-depth">Channel Depth</label>
-            <select name="" id="channel-depth">
-              <option value="select">Select</option>
-              <option value="lorem">Lorem</option>
-              <option value="ipsum">Ipsum</option>
-            </select>
-            <label for="#channel-width">Channel Width</label>
-            <select name="" id="channel-width">
-              <option value="select">Select</option>
-              <option value="lorem">Lorem</option>
-              <option value="ipsum">Ipsum</option>
-            </select>
+          <div>
+            <h2>PRODUCT ADVISOR</h2>
+            <h4>Find your project’s perfect fit.</h4>
+          </div>
+          <form id="product-advisor" action="get">
+            <div>
+              <label for="#product-type">Product Type</label>
+              <select name="" id="product-type">
+                <option value="select">Select</option>
+                <option value="lorem">Lorem</option>
+                <option value="ipsum">Ipsum</option>
+              </select>
+            </div>
+            <div>
+              <label for="#screen-location">Screen Location</label>
+              <select name="" id="screen-location">
+                <option value="select">Select</option>
+                <option value="lorem">Lorem</option>
+                <option value="ipsum">Ipsum</option>
+              </select>
+            </div>
+            <div>
+              <label for="#flow-type">Flow Type</label>
+              <select name="" id="flow-type">
+                <option value="select">Select</option>
+                <option value="lorem">Lorem</option>
+                <option value="ipsum">Ipsum</option>
+              </select>
+            </div>
+            <div>
+              <label for="#channel-depth">Channel Depth</label>
+              <select name="" id="channel-depth">
+                <option value="select">Select</option>
+                <option value="lorem">Lorem</option>
+                <option value="ipsum">Ipsum</option>
+              </select>
+            </div>
+            <div>
+              <label for="#channel-width">Channel Width</label>
+              <select name="" id="channel-width">
+                <option value="select">Select</option>
+                <option value="lorem">Lorem</option>
+                <option value="ipsum">Ipsum</option>
+              </select>
+            </div>
             <input type="submit" value="FIND MY PRODUCT" />
+            
           </form>
+          <a>sample button</a>
+          <a class="secondary">sample secondary button</a>
+          <a class="transparent-buttons">sample secondary button</a>
+
         </section>
         <section>
           <h2>DELIVERING CLEAN, SAFE WATER SINCE 1975. REFRESHING INDEED.</h2>
