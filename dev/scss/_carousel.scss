@@ -28,18 +28,19 @@ body {
 .active-photo {
   opacity: 1;
 }
-.carousel-nav {
-  display: flex;
-  position: absolute;
-  top: 80%;
-  width: 8%;
-  justify-content: space-around;
-}
+// .carousel-nav {
+//   display: flex;
+//   position: absolute;
+//   top: 80%;
+//   width: 8%;
+//   justify-content: space-around;
+// }
 .circle {
   border-radius: 50%;
   height: 1rem;
   width: 1rem;
   background-color: white;
+  margin: 0 0.5rem;
 }
 #carouselNav1 {
   background-color: blue;
