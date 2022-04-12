@@ -1,0 +1,43 @@
+@use "variables" as *;
+
+#install-CTA {
+  background-image: url("../images/map.jpg");
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    text-align: center;
+    padding: 2rem;
+    h2 {
+      padding: 2rem;
+      text-align: center;
+    }
+  }
+}
+#contact-CTA {
+  background-color: $medium-blue-background;
+  div {
+    text-align: center;
+    padding: 2rem;
+    h2 {
+      padding: 2rem;
+      color: white;
+      text-align: center;
+    }
+  }
+}
+@media only screen and (min-width: 48rem) {
+  #install-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  #install-CTA {
+    padding: 5rem 1rem;
+  }
+  #contact-CTA {
+    order: -1;
+    padding: 5rem 1rem;
+  }
+}
