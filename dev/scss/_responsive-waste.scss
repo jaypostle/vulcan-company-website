@@ -7,43 +7,45 @@
 }
 
 .waste-info {
-    text-align: center;
-    h2 {
-        max-width: 10rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    p{
-        font-size: .9rem;
-        max-width: 16.5rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  text-align: center;
+  h2 {
+    max-width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+    font-size: 0.9rem;
+    max-width: 16.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.waste-collection {
+  max-width: 75%;
 }
 
 @include mq-tablet($mid) {
-    .waste-info{
-        h2{
-            max-width: 25rem;
-        }
-        p{
-            max-width: 33rem;
-            font-size: .8rem;
-        }
+  .waste-info {
+    h2 {
+      max-width: 25rem;
     }
+    p {
+      max-width: 33rem;
+      font-size: 0.8rem;
+    }
+  }
 }
 
 @include mq-desktop($desktop) {
-    .waste-info {
-        p {
-            font-size: .9rem;
-            max-width: 41rem;
-        }
+  .waste-info {
+    p {
+      font-size: 0.9rem;
+      max-width: 41rem;
     }
+  }
 }
 
 @media (max-width: 600px) {
-
   .waste-collection {
     @include display-flex;
     padding-top: 2rem;
@@ -51,29 +53,22 @@
     align-content: space-between;
     flex-wrap: nowrap;
     position: relative;
-    scale: .75;
-    h3{
-
-        padding: 1rem;
-        color: $dark-gray-elements;
-        text-align: center;
-        
+    scale: 0.75;
+    h3 {
+      padding: 1rem;
+      color: $dark-gray-elements;
     }
- }    
-  .waste-collection:nth-child(1n+2)::after {
+  }
+  .waste-collection:not(:last-child)::after {
     content: "";
     position: absolute;
     background-color: lightgray;
-    margin: 0;
-    padding: 0;
-    width: 24rem;
+    width: 110%;
     height: 1px;
     z-index: 2;
-    top: -10px;
-    left: -35px;
+    bottom: -0.5rem;
+  }
 }
-}
-
 
 // @include mq-tablet($mid) {
 //   .hidden-mobile {
@@ -105,59 +100,46 @@
 //   }
 // }
 
+@include mq-tablet($mid) {
+  .hidden-mobile {
+    display: block;
+  }
+  .waste-collection {
+    max-width: 15.625rem;
+    img {
+      max-width: 100%;
+    }
+  }
+  .waste-articles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
-@include mq-tablet($mid){
-
-    .hidden-mobile {
-        display: block;
-    }
-    .waste-collection {
-        max-width: 15.625rem;
-    }
-    .waste-articles{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-
-        gap: .25rem;
-    }
-    .waste-collection {
-    h3{
-        display: block;
-        text-align: center;
-        width: 100%;
-        height: 1.5rem;
-    }
-    a{
-        font-size: 0.9rem;
-    }
-}
+    gap: 0.25rem;
+  }
+  .waste-collection h3 {
+    margin-left: 0.5rem;
+    text-align: center;
+    height: 2rem;
+  }
 }
 @include mq-desktop($desktop) {
-    .hidden-mobile {
-        display: block;
 
-    }
-    .waste-articles{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-content: $center;
-        align-items: $center;
-        padding: 1rem;
-        margin: auto;
-    }
-    .waste-collection{
-     h3 {
-        display: block;
-        text-align: center;
-        width: 100%;
-        height: 1.5rem;
-    }
-        a{
-        font-size: 0.9rem;
-    }
-    }   
-
+  .hidden-mobile {
+    display: block;
+  }
+  .waste-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: $center;
+    align-items: $center;
+    padding: 1rem;
+    text-align: center;
+    margin: auto;
+  }
+  .waste-collection h3 {
+    text-align: center;
+  }
 
 }
 
@@ -165,4 +147,22 @@
   // position: absolute;
   max-width: 100%;
   height: auto;
+}
+//this is for the dark blue wave below waste machinery
+.waste-articles {
+  position: relative;
+  padding-bottom: 5rem;
+}
+#dark-blue-wave {
+  background-image: url("../images/wave-blue-dark.png");
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 3rem;
+  background-position: center;
+  background-size: 170% 100%;
+  @media only screen and (min-width: 40rem) {
+    background-size: 100% 100%;
+    height: 5rem;
+  }
 }
