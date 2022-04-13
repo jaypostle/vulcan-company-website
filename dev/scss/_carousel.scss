@@ -12,7 +12,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  // transform: translate(-50%, -50%);
+  transform: translate(-50%);
   opacity: 0;
   transition: 500ms opacity ease-in-out;
   transition-delay: 200ms;
@@ -60,6 +60,9 @@ body {
   #place-holder > img {
     width: 150vw;
   }
+  .slide {
+    transform: translate(0%);
+  }
   .slide > img {
     width: 150%;
   }
@@ -70,6 +73,9 @@ body {
   }
   #place-holder > img {
     width: 100vw;
+  }
+  .slide {
+    transform: translate(0%);
   }
   .slide > img {
     width: 100%;
