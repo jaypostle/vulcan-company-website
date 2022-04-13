@@ -123,6 +123,7 @@
   }
 }
 @include mq-desktop($desktop) {
+
   .hidden-mobile {
     display: block;
   }
@@ -139,6 +140,7 @@
   .waste-collection h3 {
     text-align: center;
   }
+
 }
 
 #carousel {

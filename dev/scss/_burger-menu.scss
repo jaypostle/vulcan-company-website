@@ -20,6 +20,11 @@ nav {
             font-size: 2;
             display: none;
             cursor: pointer;
+            margin: 0.5rem;
+            color: #fff;
+        }
+        .desktop-hidden{
+            display: none;
         }
     }
     .openMenu {
@@ -32,29 +37,44 @@ nav {
 }
 
 @media (max-width: $tablet-landscape) {
+    .list-container {
+        height: 0;
+        overflow: hidden;
+    }
     nav{
         .mainMenu {
-            height: 100vh;
+            height: 37vh;
             position: fixed;
+            transform: translateY(72px);
             top: 0;
             right: 0;
             left: 0;
             z-index: 10;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            // align-items: center;
             transition: top 1s ease;
             display: none;
             .closeMenu{
                 position: absolute;
+                margin: 0.5rem;
+                color: #fff;
                 top: 20px;
                 right: 20px
             }
+            .desktop-hidden{
+                display: inline-block;
+                text-decoration: none;
+                list-style: none;
+            }
+
+
+                
         }
         .openMenu {
             display: block;
         }
-        .mainMenu li a:hover {
+        .mainMenu a:hover {
             background-color: $branded-blue;
             font-size: 1.6;
 
@@ -72,9 +92,18 @@ nav {
 .mainMenu {
     background-color: $dark-gray-elements-transparent;
     margin-top: 0;
-
+    li a {
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+    }
     // a {
     //     background-color: rgba($branded-blue, 0);
     // }
+}
+.mainMenu li:hover{
+    background-color: $branded-blue;
+    width: 100%;
+    padding-left: -10rem;
 }
 }
