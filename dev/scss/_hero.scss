@@ -4,6 +4,10 @@
 @use "mixins-mike" as *;
 @use "form-CTA" as *;
 
+
+// ** // 
+//total nav container
+// ** // 
 header {
     background-color: $dark-header-blue;
 
@@ -13,7 +17,20 @@ header {
         left: 0;
         right: 0;
         z-index: 9999;
-    }
+        background-color: $dark-gray-elements-transparent;
+
+        @include mq-tablet(900px){
+            background-color: rgba($dark-gray-elements, 0);
+            margin-top: 1rem;
+
+        }
+
+        img {
+            margin-top: 0;
+        }
+
+        
+}
 }
 
 // total navigation container
@@ -24,53 +41,32 @@ header {
     align-items: center;
 }
 
-// hero text container
-#hero {
-    position: relative;
+@include mq-tablet($tablet-landscape){
+    .total-navigation-container {
+        display: block;
+}
 }
 
-#hero-title-section {
-    position: absolute;
-    top: 50%;
-    // bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    // right: 50%;
-    z-index:  200;
+// ** // 
+// main navigation container
+// ** // 
+.main-navigation-container {
+    justify-content: space-around;
 
-    text-align: center;
+    a {
+        background-color: $dark-gray-elements-transparent;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 1rem 2rem;
 
-    @include mq-tablet($tablet){
-        top: 60%;
     }
 
-    @include mq-desktop($desktop){
-        top: 50%;
-    }
-    h1 {
-        margin: 1rem 0;
-        color: #fff;
-        font-size: 2rem;
-        line-height: 2rem;
 
-    @include mq-desktop($tablet){
-        // line-height: 3rem;
-    }
-    }
-
-    .carousel-nav {
-        // position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        // bottom: 0;
-        // left: 0;
-        // right: 0;
-        margin: 2rem;
-    }
 }
 
+// ** // 
+// secondary nav container
+// ** // 
 .logo-container {
     grid-column: 1 / span 1;
 
@@ -82,19 +78,14 @@ header {
 
 }
 
-@include mq-tablet($tablet-landscape){
-    .total-navigation-container {
-        display: block;
-}
-}
-
 // secondary nav (top level) container
 .secondary-navigation-container {
     
-    padding-left: 2rem;
+    padding-left: 1rem;
 
     @media (max-width: $tablet-landscape) {
-    
+        // padding-left: 2rem;
+
 
     .desktop-left,
     .desktop-right {
@@ -153,16 +144,99 @@ header {
     }
 }
 
-.main-navigation-container {
-    justify-content: space-around;
+// ** // 
+// hero text container
+// ** // 
+#hero {
+    position: relative;
+}
 
-    a {
-        background-color: $dark-gray-elements-transparent;
-        font-size: 1rem;
-        font-weight: 500;
-        padding: 1rem 2rem;
+#hero-title-section {
+    position: absolute;
+    top: 60%;
+    // bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // right: 50%;
+    z-index:  200;
+    width: 90%;
 
+    text-align: center;
+
+    #hero-buttons {
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+        margin: 0 auto;
+
+        a {
+            margin: 0.25rem;
+        }
+
+        @include mq-tablet($mid){
+            display: block;
+            margin-top: 3rem;
+            max-width: 100%;
+
+            a {
+                margin: 1rem;
+            }
+        }
     }
 
+    @include mq-tablet($tablet){
+        top: 50%;
+        width: 60%;
+    }
 
+    @include mq-desktop(1000px){
+        top: 60%;
+    }
+    
+    h1 {
+        margin: 1rem 0;
+        color: #fff;
+        font-size: 2rem;
+        line-height: 3rem;
+
+    @include mq-desktop($tablet){
+        line-height: 3rem;
+    }
+    }
+
+    @include mq-desktop($desktop){
+
+        h1 {
+           
+            font-size: 3rem;
+            line-height: 4rem;
+        }
+    }
+
+    .carousel-nav {
+        // position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        // bottom: 0;
+        // left: 0;
+        // right: 0;
+        margin: 1rem 1rem 2rem;
+
+        @include mq-tablet($mid){
+            margin: 3rem 1rem 1rem;
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
