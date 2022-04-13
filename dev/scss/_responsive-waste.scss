@@ -6,6 +6,10 @@
   display: none;
 }
 
+#customized-order-section {
+  // padding: 0 1rem;
+}
+
     .waste-collection h3{
         max-width: 16px;
     }
@@ -27,6 +31,7 @@
     @include display-flex;
     text-align: center;
     margin: auto;
+    padding: 0;
   }
 }
 
@@ -40,7 +45,6 @@
     justify-content: space-around;
     align-content: $center;
     align-items: $center;
-    padding: 1rem;
     text-align: center;
     margin: auto;
   }
@@ -89,7 +93,7 @@
         justify-content: space-around;
         align-content: $center;
         align-items: $center;
-        padding: 1rem;
+        // padding: 1rem;
         text-align: center;
         margin: auto;
     }
@@ -100,8 +104,8 @@
 
 }
 
-#carousel {
-  // position: absolute;
-  max-width: 100%;
-  height: auto;
-}
+// #carousel {
+//   // position: absolute;
+//   max-width: 100%;
+//   height: auto;
+// }
