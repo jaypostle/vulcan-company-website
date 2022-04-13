@@ -110,20 +110,17 @@
   .waste-articles {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
     gap: 0.25rem;
   }
   .waste-collection h3 {
     margin-left: 0.5rem;
     text-align: center;
     height: 2rem;
+
   }
 }
-
 @include mq-desktop($desktop) {
-  .waste-collection h3 {
-    max-width: 16px;
-  }
-
   .hidden-mobile {
     display: block;
   }
@@ -140,6 +137,7 @@
   .waste-collection h3 {
     margin-left: 4.5rem;
     text-align: center;
+
   }
 }
 
@@ -147,4 +145,22 @@
   // position: absolute;
   max-width: 100%;
   height: auto;
+}
+//this is for the dark blue wave below waste machinery
+.waste-articles {
+  position: relative;
+  padding-bottom: 5rem;
+}
+#dark-blue-wave {
+  background-image: url("../images/wave-blue-dark.png");
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 3rem;
+  background-position: center;
+  background-size: 170% 100%;
+  @media only screen and (min-width: 40rem) {
+    background-size: 100% 100%;
+    height: 5rem;
+  }
 }
