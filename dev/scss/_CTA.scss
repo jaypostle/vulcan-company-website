@@ -11,7 +11,8 @@
   max-width: 25rem;
 }
 
-#contact-CTA, #install-CTA {
+#contact-CTA,
+#install-CTA {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,8 +29,9 @@
     }
   }
 }
-@include mq-mobile($mobile){
-  #contact-CTA, #install-CTA {
+@include mq-mobile($mobile) {
+  #contact-CTA,
+  #install-CTA {
     height: 20rem;
   }
 }
@@ -44,21 +46,20 @@
 
   h2 {
     color: $dark-gray-elements;
+    width: 11.5rem;
   }
-
 }
 #contact-CTA {
   background-color: $medium-blue-background;
   // padding-bottom: 3rem;
-    h2 {
-      color: white;
-    }
+  h2 {
+    color: white;
+  }
 }
 #install-section {
   position: relative;
   overflow: hidden;
 }
-
 
 #footer-wave {
   position: absolute;
@@ -84,7 +85,8 @@
 }
 
 @media only screen and (min-width: 40rem) {
-  #contact-CTA, #install-CTA {
+  #contact-CTA,
+  #install-CTA {
     height: 30rem;
   }
 
