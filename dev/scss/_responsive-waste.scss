@@ -4,7 +4,19 @@
 
 .hidden-mobile {
   display: none;
-}
+
+.waste-info {
+    text-align: center;
+    h2 {
+        max-width: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{
+        font-size: .9rem;
+        max-width: 16.5rem;
+        margin-left: auto;
+        margin-right: auto;
 
 #customized-order-section {
   // padding: 0 1rem;
@@ -12,15 +24,31 @@
 
     .waste-collection h3{
         max-width: 16px;
-    }
 
-@media (max-width: 600px) {
-  .waste-collection {
-    @include display-flex;
-  }
+    }
 }
 
 @include mq-tablet($mid) {
+    .waste-info{
+        h2{
+            max-width: 25rem;
+        }
+        p{
+            max-width: 33rem;
+            font-size: .8rem;
+        }
+    }
+}
+
+@include mq-desktop($desktop) {
+    .waste-info {
+        p {
+            font-size: .9rem;
+            max-width: 41rem;
+        }
+    }
+}
+
   .hidden-mobile {
     display: block;
   }
@@ -49,22 +77,75 @@
     margin: auto;
   }
 
-    .waste-collection {
-        @include display-flex;
-        position: relative;
-    }    
-    .waste-collection::after {
-        content: "";
-        position: absolute;
-        background-color: $text-gray;
-        width: 90%;
-        height: 1px;
-        top: 0;
-        left: 25px;
+
+@media (max-width: 600px) {
+
+  .waste-collection {
+    @include display-flex;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+    scale: .75;
+    h3{
+
+        padding: 1rem;
+        color: $dark-gray-elements;
+        
     }
+ }    
+  .waste-collection:nth-child(1n+2)::after {
+    content: "";
+    position: absolute;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    width: 24rem;
+    height: 1px;
+    z-index: 2;
+    top: -10px;
+    left: -35px;
+}
 }
 
+
+// @include mq-tablet($mid) {
+//   .hidden-mobile {
+//     display: block;
+//   }
+//   .waste-collection {
+//     max-width: 15.625rem;
+//   }
+//   .waste-articles {
+//     @include display-flex;
+//     text-align: center;
+//     margin: auto;
+//   }
+// }
+
+// @include mq-desktop($desktop) {
+//   .hidden-mobile {
+//     display: block;
+//   }
+//   .waste-articles {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//     align-content: $center;
+//     align-items: $center;
+//     padding: 1rem;
+//     text-align: center;
+//     margin: auto;
+//   }
+// }
+
+
 @include mq-tablet($mid){
+    .waste-collection h3{
+        max-width: 16px;
+    }
+
     .hidden-mobile {
         display: block;
     }
@@ -72,17 +153,21 @@
         max-width: 15.625rem;
     }
     .waste-articles{
-        @include display-flex;
-        text-align: center;
-        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: .25rem;
     }
     .waste-collection h3{
-        margin-left: 4.5rem;
+        margin-left: .5rem;
         text-align: center;
     }
 }
 
 @include mq-desktop($desktop) {
+    .waste-collection h3{
+        max-width: 16px;
+    }
+
     .hidden-mobile {
         display: block;
 
