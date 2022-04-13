@@ -24,7 +24,7 @@ nav {
     }
     .openMenu {
         font-size: 2;
-        margin: 20px;
+        margin: 0.5rem;
         display: none;
         cursor: pointer;
         color: #fff;
@@ -63,6 +63,7 @@ nav {
     i {
         display: inline-block;
         padding: 12px;
+        font-size: 2rem;
     }
 }
 

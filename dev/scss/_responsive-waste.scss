@@ -56,6 +56,7 @@
 
         padding: 1rem;
         color: $dark-gray-elements;
+        text-align: center;
         
     }
  }    
@@ -106,9 +107,6 @@
 
 
 @include mq-tablet($mid){
-    .waste-collection h3{
-        max-width: 16px;
-    }
 
     .hidden-mobile {
         display: block;
@@ -119,19 +117,22 @@
     .waste-articles{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+
         gap: .25rem;
     }
-    .waste-collection h3{
-        margin-left: .5rem;
+    .waste-collection {
+    h3{
+        display: block;
         text-align: center;
+        width: 100%;
+        height: 1.5rem;
+    }
+    a{
+        font-size: 0.9rem;
     }
 }
-
+}
 @include mq-desktop($desktop) {
-    .waste-collection h3{
-        max-width: 16px;
-    }
-
     .hidden-mobile {
         display: block;
 
@@ -143,13 +144,20 @@
         align-content: $center;
         align-items: $center;
         padding: 1rem;
-        text-align: center;
         margin: auto;
     }
-    .waste-collection h3 {
-        margin-left: 4.5rem;
+    .waste-collection{
+     h3 {
+        display: block;
         text-align: center;
+        width: 100%;
+        height: 1.5rem;
     }
+    a{
+        font-size: 0.9rem;
+    }
+    }   
+
 
 }
 
