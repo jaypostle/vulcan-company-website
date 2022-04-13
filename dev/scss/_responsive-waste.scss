@@ -20,6 +20,9 @@
     margin-right: auto;
   }
 }
+.waste-collection {
+  max-width: 75%;
+}
 
 @include mq-tablet($mid) {
   .waste-info {
@@ -56,17 +59,14 @@
       color: $dark-gray-elements;
     }
   }
-  .waste-collection:nth-child(1n + 2)::after {
+  .waste-collection:not(:last-child)::after {
     content: "";
     position: absolute;
     background-color: lightgray;
-    margin: 0;
-    padding: 0;
-    width: 24rem;
+    width: 110%;
     height: 1px;
     z-index: 2;
-    top: -10px;
-    left: -35px;
+    bottom: -0.5rem;
   }
 }
 
