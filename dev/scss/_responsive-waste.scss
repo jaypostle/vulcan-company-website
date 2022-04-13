@@ -6,31 +6,70 @@
   display: none;
 }
 
+.waste-info {
+    text-align: center;
+    h2 {
+        max-width: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{
+        font-size: .9rem;
+        max-width: 16.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
+@include mq-tablet($mid) {
+    .waste-info{
+        h2{
+            max-width: 25rem;
+        }
+        p{
+            max-width: 33rem;
+            font-size: .8rem;
+        }
+    }
+}
+
+@include mq-desktop($desktop) {
+    .waste-info {
+        p {
+            font-size: .9rem;
+            max-width: 41rem;
+        }
+    }
+}
 
 @media (max-width: 600px) {
 
   .waste-collection {
     @include display-flex;
+    padding-top: 2rem;
+    padding-left: 5rem;
     align-content: space-between;
     flex-wrap: nowrap;
     position: relative;
-    scale: .5;
+    scale: .75;
     h3{
-        scale: 1.5;
+
         padding: 1rem;
         color: $dark-gray-elements;
         
     }
  }    
-.waste-collection:nth-child(1n+2)::after {
+  .waste-collection:nth-child(1n+2)::after {
     content: "";
     position: absolute;
-    background-color: $text-gray;
-    width: 100%;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    width: 24rem;
     height: 1px;
-    top: 0;
-    left: 25px;
+    z-index: 2;
+    top: -10px;
+    left: -35px;
 }
 }
 
