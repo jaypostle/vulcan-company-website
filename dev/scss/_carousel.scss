@@ -12,14 +12,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  // transform: translate(-50%, -50%);
   opacity: 0;
   transition: 500ms opacity ease-in-out;
   transition-delay: 200ms;
 }
 .slide > img {
-  width: 100%;
-  object-fit: cover;
-  display: block;
+  max-width: 300%;
 }
 
 .carousel > ul {
@@ -52,5 +51,27 @@ body {
   opacity: 0;
 }
 #place-holder > img {
-  width: 100vw;
+  max-width: 300%;
+}
+@media only screen and (min-width: 34rem) {
+  img {
+    max-width: 150%;
+  }
+  #place-holder > img {
+    width: 150vw;
+  }
+  .slide > img {
+    width: 150%;
+  }
+}
+@media only screen and (min-width: 62.5rem) {
+  img {
+    max-width: 100%;
+  }
+  #place-holder > img {
+    width: 100vw;
+  }
+  .slide > img {
+    width: 100%;
+  }
 }
