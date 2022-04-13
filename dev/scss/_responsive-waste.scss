@@ -20,7 +20,11 @@
     margin-right: auto;
   }
 }
-
+.waste-collection {
+  img {
+    max-width: 75%;
+  }
+}
 @include mq-tablet($mid) {
   .waste-info {
     h2 {
@@ -56,17 +60,16 @@
       color: $dark-gray-elements;
     }
   }
-  .waste-collection:nth-child(1n + 2)::after {
+  .waste-collection::after {
     content: "";
     position: absolute;
     background-color: lightgray;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    width: 24rem;
+    width: 75%;
+    bottom: -0.75rem;
     height: 1px;
     z-index: 2;
-    top: -10px;
-    left: -35px;
   }
 }
 
@@ -117,7 +120,6 @@
     margin-left: 0.5rem;
     text-align: center;
     height: 2rem;
-
   }
 }
 @include mq-desktop($desktop) {
@@ -127,7 +129,7 @@
   .waste-articles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-content: $center;
     align-items: $center;
     padding: 1rem;
@@ -137,7 +139,6 @@
   .waste-collection h3 {
     margin-left: 4.5rem;
     text-align: center;
-
   }
 }
 
