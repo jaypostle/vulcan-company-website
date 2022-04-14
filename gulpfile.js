@@ -226,6 +226,5 @@ function cleanTask(done){
 exports.default = series(parallel(sassTask, jsTask), watchTask);
 
 // Build Task:     
-exports.build = series(setBuildState, cleanTask, parallel(sassBuildTask, jsBuildTask, jQueryTask), parallel(imagesTask, mediaTask, fontsTask), htmlTask, cacheBustTask);
-
+exports.build = series(setBuildState, cleanTask, parallel(sassBuildTask, jsBuildTask, jQueryTask), parallel(imagesTask, mediaTask, fontsTask), htmlTask);
 
