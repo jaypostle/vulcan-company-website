@@ -163,6 +163,11 @@ header {
 
     text-align: center;
 
+    @media only screen and (max-width: 360px) {
+       top: 55%;
+       
+      }
+
     #hero-buttons {
         display: flex;
         flex-direction: column;
@@ -198,6 +203,13 @@ header {
         color: #fff;
         font-size: 2rem;
         line-height: 3rem;
+
+        @media only screen and (max-width: 360px) {
+             
+                font-size: 1.75rem;
+                line-height: 2rem;
+        
+        }
 
     @include mq-desktop($tablet){
         line-height: 3rem;
